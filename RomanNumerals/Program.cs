@@ -31,13 +31,21 @@ namespace RomanNumerals
             // Loop through all inputs to convert them to numerals
             foreach (var number in numberStrings)
             {
-                if (int.Parse(number) < 1 || int.Parse(number) > 3999)
+                var outNumber = 0;
+                if (int.TryParse(number, out outNumber))
                 {
-                    Console.WriteLine("The supplied number, " + number + ", is not within the allowed range, please enter a number between 1 and 3999");
+                    if (outNumber < 1 || outNumber > 3999)
+                    {
+                        Console.WriteLine("The supplied number, " + number + ", is not within the allowed range, please enter a number between 1 and 3999");
+                    }
+                    else
+                    {
+                        ParseNumberToNumerals(number.Trim());
+                    }
                 }
                 else
                 {
-                    ParseNumberToNumerals(number.Trim());
+                    Console.WriteLine(number + " is not a number");
                 }
             }
         }
