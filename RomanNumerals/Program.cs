@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace RomanNumerals
 {
@@ -39,7 +38,7 @@ namespace RomanNumerals
 
             var index = 1;
             var length = numberArray.Length;
-            foreach(var thing in numberArray)
+            foreach (var thing in numberArray)
             {
                 var power = length - index;
                 var numberToConvert = 0d;
@@ -53,23 +52,54 @@ namespace RomanNumerals
                     numberToConvert = double.Parse(thing.ToString());
                 }
 
-                while (numberToConvert > 0)
+                if (numberToConvert.ToString().StartsWith("4") || numberToConvert.ToString().StartsWith("9"))
                 {
-                    foreach (var numeral in _numerals.OrderByDescending(x => x.Key))
-                    {
-                        if (numberToConvert - numeral.Key >= 0)
-                        {
-                            sb.Append(numeral.Value);
-                            numberToConvert -= numeral.Key;
-                            break;
-                        }
-                    }
+                    ProcessSubtractionNumeral(numberToConvert, sb);
+                }
+                else
+                {
+                    ProcessNormalNumeral(numberToConvert, sb);
                 }
 
                 index++;
             }
 
             Console.WriteLine(sb);
+        }
+
+        public static void ProcessNormalNumeral(double numberToConvert, StringBuilder sb)
+        {
+            while (numberToConvert > 0)
+            {
+                foreach (var numeral in _numerals.OrderByDescending(x => x.Key))
+                {
+                    if (numberToConvert - numeral.Key >= 0)
+                    {
+                        sb.Append(numeral.Value);
+                        numberToConvert -= numeral.Key;
+                        break;
+                    }
+                }
+            }
+        }
+
+        public static void ProcessSubtractionNumeral(double numberToConvert, StringBuilder sb)
+        {
+            var previousKey = 0;
+            foreach (var numeral in _numerals.OrderBy(x => x.Key))
+            {
+                if (numberToConvert - numeral.Key < 0)
+                {
+                    //Find Correct numeral where numeral.Key - NUM = numberToConvert
+                    int numeralIndex = numeral.Key - (int)numberToConvert;
+                    sb.Append(_numerals[numeralIndex]);
+                    
+                    sb.Append(numeral.Value);
+                    break;
+                }
+
+                previousKey = numeral.Key;
+            }
         }
     }
 }
