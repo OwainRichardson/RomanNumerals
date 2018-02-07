@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RomanNumerals")]
+[assembly: AssemblyTitle("NumeralLogic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RomanNumerals")]
+[assembly: AssemblyProduct("NumeralLogic")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("87359592-3a3c-4219-b16a-002c67a100d1")]
+[assembly: Guid("cecc4d14-9f08-4bbd-b9ba-791c7ec87feb")]
 
 // Version information for an assembly consists of the following four values:
 //

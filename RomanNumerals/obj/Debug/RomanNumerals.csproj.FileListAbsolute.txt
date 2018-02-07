@@ -1,0 +1,8 @@
+G:\OwainGIT\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.exe.config
+G:\OwainGIT\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.exe
+G:\OwainGIT\RomanNumerals\RomanNumerals\bin\Debug\RomanNumerals.pdb
+G:\OwainGIT\RomanNumerals\RomanNumerals\bin\Debug\NumeralLogic.dll
+G:\OwainGIT\RomanNumerals\RomanNumerals\bin\Debug\NumeralLogic.pdb
+G:\OwainGIT\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.csprojResolveAssemblyReference.cache
+G:\OwainGIT\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.exe
+G:\OwainGIT\RomanNumerals\RomanNumerals\obj\Debug\RomanNumerals.pdb

@@ -1,0 +1,4 @@
+G:\OwainGIT\RomanNumerals\NumeralLogic\bin\Debug\NumeralLogic.dll
+G:\OwainGIT\RomanNumerals\NumeralLogic\bin\Debug\NumeralLogic.pdb
+G:\OwainGIT\RomanNumerals\NumeralLogic\obj\Debug\NumeralLogic.dll
+G:\OwainGIT\RomanNumerals\NumeralLogic\obj\Debug\NumeralLogic.pdb

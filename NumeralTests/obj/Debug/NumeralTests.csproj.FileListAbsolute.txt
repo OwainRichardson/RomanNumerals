@@ -1,0 +1,8 @@
+G:\OwainGIT\RomanNumerals\NumeralTests\bin\Debug\NumeralTests.dll
+G:\OwainGIT\RomanNumerals\NumeralTests\bin\Debug\NumeralTests.pdb
+G:\OwainGIT\RomanNumerals\NumeralTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\OwainGIT\RomanNumerals\NumeralTests\bin\Debug\NumeralLogic.dll
+G:\OwainGIT\RomanNumerals\NumeralTests\bin\Debug\NumeralLogic.pdb
+G:\OwainGIT\RomanNumerals\NumeralTests\obj\Debug\NumeralTests.csprojResolveAssemblyReference.cache
+G:\OwainGIT\RomanNumerals\NumeralTests\obj\Debug\NumeralTests.dll
+G:\OwainGIT\RomanNumerals\NumeralTests\obj\Debug\NumeralTests.pdb

@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net451": {
+      "wrappedProject": "../../NumeralLogic/NumeralLogic.csproj",
+      "bin": {
+        "assembly": "../../NumeralLogic/obj/{configuration}/NumeralLogic.dll",
+        "pdb": "../../NumeralLogic/obj/{configuration}/NumeralLogic.pdb"
+      }
+    }
+  }
+}
